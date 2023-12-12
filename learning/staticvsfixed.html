@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* position relative is for adjusting any element with respect to its original place */
+        /* position absolute is for adjusting any element with respect to its positioned parent container*/
+        .container{
+            height:5000px;
+            background:red;
+        }
+        .box{
+            background-color: blue;
+            width:70px;
+            height:70px;
+            border:2px solid red;
+            display:inline-block;
+        }
+        #box3{
+            position:sticky;
+        }
+        #box4{
+            background-color: green;
+            width:100px;
+            height:100px;
+        }
+
+        /* #box2{
+            position:fixed;
+            left:20px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            box1
+        </div>
+        <div class="box" id="box2">
+            box2
+        </div>
+        <div class="box" id="box3">
+            box3
+        </div>
+        <div class="box" id="box4">
+            box4
+        </div>
+    </div>
+</body>
+</html>
